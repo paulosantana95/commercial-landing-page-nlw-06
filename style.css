@@ -1,5 +1,4 @@
 /*============= RESET CSS ===========*/
-
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,6 @@ img {
 }
 
 /*============= VARIAVEIS ===========*/
-
 :root {
 
     --header-hight: 4.5rem;
@@ -34,7 +32,6 @@ img {
 }
 
 /*============= BASE ===========*/
-
 body {
     font: 400 1rem "DM Sans", sans-serif;
     color: var(--text-color);
@@ -73,42 +70,7 @@ h1 {
     );
 }
 
-.divider-2 {
-
-}
-
 /*============= LAYOUT ===========*/
-
-#header {
-    border-bottom: 1px solid #e4e4e4;
-    margin-bottom: 2rem;
-    display: flex;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: var(--body-color);
-    width: 100%;
-}
-
-nav {
-    height: var(--header-hight);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.logo {
-    font: 700 1.31rem "Poppins", sans-serif;
-    color: var(--title-color);
-}
-
-.logo span {
-    color: var(--base-color);
-}
-
 .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -123,11 +85,42 @@ nav {
     padding: 5rem 0;
 }
 
-main {
-    margin-top: var(--header-hight);
+#header {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2rem;
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-color);
+    width: 100%;
 }
 
+main {
+    margin-top: calc(var(--header-hight) + 2rem);
+}
 
+/*============= NAVIGATION ===========*/
+nav {
+    height: var(--header-hight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/*============= LOGO ===========*/
+
+.logo {
+    font: 700 1.31rem "Poppins", sans-serif;
+    color: var(--title-color);
+}
+
+.logo span {
+    color: var(--base-color);
+}
 
 /*============= HOME ===========*/
 
