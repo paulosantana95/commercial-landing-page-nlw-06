@@ -7,34 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OriginSix</title>
     
+    <!--ICONES-->
+    <link rel="stylesheet" href="assets/icons/style.css">
     <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <header id="header">
+    <header id="header" class="">
         <nav class="container">
             <a class="logo" href="#">beauty<span>salon</span>.</a>
             <!-- menu -->
             <div class="menu">
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#contact">Contatos</a></li>
+                <ul class="grid">
+                    <li><a class="title" href="#home">Início</a></li>
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#services">Serviços</a></li>
+                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="title" href="#contact">Contatos</a></li>
                 </ul>
-            
-            </div><!-- /menu --> 
-            <div class="open">...</div>
-            <div class="close">x</div>
+            </div>
+            <!-- /menu --> 
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
             </nav>
     </header>
 
     <main>
+        <!-- home -->
         <section class="section" id="home">
             <div class="container grid">
                 <div class="image">
@@ -42,22 +46,73 @@
                 </div>
         
                 <div class="text">
-                    <h1>Saúde natural para os seus cabelos</h1>
+                    <h2 class="title">Saúde natural para os seus cabelos</h2>
                     <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
                     <a class="button" href="#">Agendar um horário</a>
                 </div>
             </div>
         </section>
-
+        <!-- /home -->
         <div class="divider-1"></div>
-
+        <!-- about -->
         <section class="section" id="about">
-            <div class="container grid">ABOUT</div>
+            <div class="container grid">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="3 mulheres sorrindo com ferramentas para cabelos">
+                </div>
+                <div class="text">
+                    <h2 class="title">Sobre nós</h2>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae inventore quasi commodi reprehenderit numquam nisi laborum quaerat vel consectetur neque reiciendis voluptatibus, maxime aliquam similique exercitationem corporis suscipit dicta at.
+                    </p>
+                    <br>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nihil alias quasi dicta doloribus error, quam dolorum. Aliquam commodi fuga nulla explicabo, optio excepturi at provident deserunt possimus, adipisci nostrum?
+                    </p>
+                    <br>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum quos doloribus deserunt minus similique, obcaecati, repellat voluptate, minima eligendi facere odio. Incidunt deleniti libero odio, minus enim dolorem quas?
+                    </p>
+                </div>
+            </div>
         </section>
-
+        <!-- /about -->
+        <div class="divider-2"></div>
+        <!-- services -->
         <section class="section" id="services">
-            <div class="container grid">SERVIÇOS</div>
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Serviços</h2>
+                    <p>
+                    Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais
+                    </p>
+                </header>
+                <div class="cards grid">
+                    <div class="card">
+                        <i class="icon-woman-hair"></i>
+                        <h3 class="title">Terapia capilar</h3>
+                        <p>
+                        Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-trim"></i>
+                        <h3 class="title">Cortes</h3>
+                        <p>
+                        A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-cosmetic"></i>
+                        <h3 class="title">Tratamento</h3>
+                        <p>
+                        O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- /services -->
 
 
 
@@ -70,5 +125,6 @@
     </footer>
 
     <script src="main.js"></script>
+
 </body>
 </html>
