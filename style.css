@@ -21,7 +21,6 @@ img {
 /*============= VARIAVEIS ===========*/
 :root {
     --header-hight: 4.5rem;
-
     /* color */
     --hue: 159;
     /* HSL color mode */
@@ -104,7 +103,7 @@ body {
 }
 
 .section {
-    padding: calc(5rem + var(--header-hight));
+    padding: calc(5rem + var(--header-hight)) 0;
 }
 
 .section .title{
@@ -177,7 +176,6 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
     color: var(--base-color);
-    font-weight: bold;
 }
 
 nav ul li a::after {
@@ -570,6 +568,12 @@ footer .social a:hover {
 
     nav .menu ul li a.title {
         font: 400 1rem var(--body-font);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    nav .menu ul li a.title.active {
+        font-weight: bold;
+        -webkit-font-smoothing: auto;
     }
 
     nav .icon-menu {
