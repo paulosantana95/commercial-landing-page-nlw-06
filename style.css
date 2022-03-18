@@ -537,6 +537,11 @@ footer .social a:hover {
 }
 /* large devices: 1023 > */
 @media (min-width: 1023px) {
+    /* Base */
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .container{
         max-width: 1023px;
@@ -563,6 +568,11 @@ footer .social a:hover {
     }
 
     /* navigation menu */
+    nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     nav .menu {
         opacity: 1;
         visibility: visible;
@@ -587,10 +597,12 @@ footer .social a:hover {
     nav .icon-menu {
         display: none;
     }
-    
+
+    /* layout */
     main {
         margin-top: var(--header-hight);
     }
+    
 
     /* Home */
     #home .container {
@@ -616,7 +628,6 @@ footer .social a:hover {
     }
 
     /* services */
-
     .card {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -640,7 +651,6 @@ footer .social a:hover {
 
     #contact .text {
         max-width: 25rem;
-        margin-left: 1.5rem;
     }
 
     /* footer */
@@ -654,18 +664,11 @@ footer .social a:hover {
         justify-content: space-between;
     }
 
-    footer .brand {
-        margin-left: 1.5rem;
-    }
-
-    footer .social {
-        margin-right: 1.5rem;
-    }
-
     footer .logo {
         font-size: 2.25rem;
     }
 }
+
 /* large devices: 992 > */
 @media (min-width: 992px) {
     :root {
