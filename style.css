@@ -531,15 +531,25 @@ footer .social a:hover {
 /*========= MEDIA QUERIES ==========*/
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
-
     .container{
         max-width: 1120px;
         margin-left: auto;
         margin-right: auto;
     }
+}
+/* large devices: 1023 > */
+@media (min-width: 1023px) {
+
+    .container{
+        max-width: 1120px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
 
     .section {
         padding: 10rem 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .section header,
@@ -648,7 +658,6 @@ footer .social a:hover {
         font-size: 2.25rem;
     }
 }
-/* large devices: 1023 > */
 /* large devices: 992 > */
 @media (min-width: 992px) {
     :root {
